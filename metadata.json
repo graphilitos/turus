@@ -1,0 +1,6 @@
+{
+  "name": "Papan Turus Pemilihan RT Digital",
+  "description": "Aplikasi digital penghitung suara pemilihan ketua RT/RW berbasis papan turus visual interaktif, rekapitulasi real-time, dan berita acara otomatis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
