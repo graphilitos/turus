@@ -51,7 +51,7 @@ const DEFAULT_CANDIDATES: Candidate[] = [
     number: '01',
     name: 'Bpk. Budi Santoso',
     tagline: 'Visi: Guyub Rukun, Bersih, dan Lingkungan Aman',
-    avatarUrl: '/src/assets/images/candidate_budi_avatar_1793242288902.jpg',
+    avatarUrl: '',
     colorScheme: 'blue',
   },
   {
@@ -59,7 +59,7 @@ const DEFAULT_CANDIDATES: Candidate[] = [
     number: '02',
     name: 'Ibu Sri Wahyuni',
     tagline: 'Visi: Pemberdayaan Warga, Posyandu Aktif & Digitalisasi RT',
-    avatarUrl: '/src/assets/images/candidate_sri_avatar_1793242289550.jpg',
+    avatarUrl: '',
     colorScheme: 'emerald',
   },
   {
@@ -67,7 +67,7 @@ const DEFAULT_CANDIDATES: Candidate[] = [
     number: '03',
     name: 'Bpk. H. Bambang Irawan',
     tagline: 'Visi: Transparansi Iuran Kas & Pembangunan Fasilitas Pos Ronda',
-    avatarUrl: '/src/assets/images/candidate_bambang_avatar_1793242290006.jpg',
+    avatarUrl: '',
     colorScheme: 'amber',
   },
 ];

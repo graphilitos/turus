@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Candidate, BoardTheme } from '../types';
 import { TurusWall } from './TurusWall';
-import { Plus, Minus, Trophy, User } from 'lucide-react';
+import { Plus, Minus, Trophy } from 'lucide-react';
 
 interface CandidateRowProps {
   candidate: Candidate;
@@ -24,7 +24,7 @@ export const CandidateRow: React.FC<CandidateRowProps> = ({
   onAddVote,
   onSubtractVote,
 }) => {
-  const [imgError, setImgError] = useState(false);
+
   const [isAnimating, setIsAnimating] = useState(false);
 
   const percentage =
@@ -65,20 +65,7 @@ export const CandidateRow: React.FC<CandidateRowProps> = ({
             <span className="text-base leading-none">{candidate.number}</span>
           </div>
 
-          {/* Photo Avatar with resilient fallback */}
-          <div className="relative w-12 h-12 shrink-0 rounded-full overflow-hidden bg-slate-100 border border-slate-200 flex items-center justify-center">
-            {!imgError && candidate.avatarUrl ? (
-              <img
-                src={candidate.avatarUrl}
-                alt={candidate.name}
-                referrerPolicy="no-referrer"
-                onError={() => setImgError(true)}
-                className="w-full h-full object-cover"
-              />
-            ) : (
-              <User className="w-6 h-6 text-slate-400" />
-            )}
-          </div>
+
 
           {/* Candidate Info */}
           <div className="min-w-0">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Candidate, ElectionConfig } from '../types';
 import confetti from 'canvas-confetti';
-import { Trophy, Award, FileText, X, User } from 'lucide-react';
+import { Trophy, Award, FileText, X } from 'lucide-react';
 
 interface WinnerCelebrationModalProps {
   isOpen: boolean;
@@ -22,7 +22,7 @@ export const WinnerCelebrationModal: React.FC<WinnerCelebrationModalProps> = ({
   config,
   onOpenBeritaAcara,
 }) => {
-  const [imgError, setImgError] = useState(false);
+
 
   const totalValidVotes = Object.values(voteCounts).reduce((a, b) => a + b, 0);
   const sortedCandidates = [...candidates].sort(
@@ -94,20 +94,8 @@ export const WinnerCelebrationModal: React.FC<WinnerCelebrationModalProps> = ({
             </div>
           ) : (
             <div className="space-y-4">
-              <div className="relative w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-amber-400 shadow-lg bg-slate-100">
-                {!imgError && winner?.avatarUrl ? (
-                  <img
-                    src={winner.avatarUrl}
-                    alt={winner.name}
-                    referrerPolicy="no-referrer"
-                    onError={() => setImgError(true)}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center bg-slate-100">
-                    <User className="w-12 h-12 text-slate-400" />
-                  </div>
-                )}
+              <div className="w-20 h-20 mx-auto rounded-full bg-amber-100 border-4 border-amber-400 shadow-lg flex items-center justify-center">
+                <Trophy className="w-10 h-10 text-amber-500" />
               </div>
 
               <div>
