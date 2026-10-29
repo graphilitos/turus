@@ -87,7 +87,8 @@ export default function App() {
   const [config, setConfig] = useState<ElectionConfig>(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY_CONFIG);
-      return saved ? JSON.parse(saved) : DEFAULT_CONFIG;
+      // Merge with DEFAULT_CONFIG to ensure new fields (e.g. province) are always present
+      return saved ? { ...DEFAULT_CONFIG, ...JSON.parse(saved) } : DEFAULT_CONFIG;
     } catch {
       return DEFAULT_CONFIG;
     }
