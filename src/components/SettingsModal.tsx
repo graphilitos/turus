@@ -46,7 +46,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
       id: `cand-${Date.now()}`,
       number: nextNum,
       name: `Calon Baru ${nextNum}`,
-      tagline: 'Visi: Mewujudkan RT yang rukun dan transparan',
+      tagline: '',
       avatarUrl: '',
       colorScheme: 'indigo',
     };
@@ -372,7 +372,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                       )}
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-12 gap-3">
+                    <div className="grid grid-cols-1 sm:grid-cols-7 gap-3">
                       <div className="sm:col-span-2">
                         <label className="block text-[11px] font-semibold text-slate-600 mb-1">
                           No. Urut
@@ -403,21 +403,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                           className="w-full px-2.5 py-1.5 text-sm border rounded-lg border-slate-300"
                         />
                       </div>
-                      <div className="sm:col-span-5">
-                        <label className="block text-[11px] font-semibold text-slate-600 mb-1">
-                          Slogan / Visi Singkat
-                        </label>
-                        <input
-                          type="text"
-                          value={cand.tagline}
-                          onChange={(e) =>
-                            handleUpdateCandidate(cand.id, {
-                              tagline: e.target.value,
-                            })
-                          }
-                          className="w-full px-2.5 py-1.5 text-sm border rounded-lg border-slate-300"
-                        />
-                      </div>
+
                     </div>
                   </div>
                 ))}

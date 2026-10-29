@@ -84,13 +84,7 @@ export const CandidateRow: React.FC<CandidateRowProps> = ({
                 </span>
               )}
             </div>
-            <p
-              className={`text-xs truncate ${
-                theme === 'chalkboard' ? 'text-slate-300' : 'text-slate-500'
-              }`}
-            >
-              {candidate.tagline || 'Calon Ketua RT'}
-            </p>
+
           </div>
         </div>
 
