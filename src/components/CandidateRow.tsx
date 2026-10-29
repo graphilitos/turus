@@ -95,7 +95,7 @@ export const CandidateRow: React.FC<CandidateRowProps> = ({
         </div>
 
         {/* Counter and Action Controls */}
-        <div className="flex items-center justify-between sm:justify-end gap-4 shrink-0 pt-2 lg:pt-0 border-t lg:border-t-0 border-slate-200/50">
+        <div className="flex items-center justify-between gap-3 shrink-0 pt-2 lg:pt-0 border-t lg:border-t-0 border-slate-200/50">
           {/* Big Number & Percentage */}
           <div className="text-right">
             <div className="flex items-baseline justify-end gap-1.5">
@@ -157,12 +157,12 @@ export const CandidateRow: React.FC<CandidateRowProps> = ({
             {/* Primary Big +1 Suara Button */}
             <button
               onClick={() => handleAdd(1)}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-semibold text-sm shadow-sm transition-all"
+              className="flex items-center gap-2 px-5 py-3 sm:py-2.5 rounded-xl sm:rounded-lg bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-base sm:text-sm shadow-sm transition-all"
             >
-              <Plus className="w-4 h-4" />
+              <Plus className="w-5 h-5" />
               <span>+1 Suara</span>
               <span className="hidden sm:inline-block px-1.5 py-0.5 rounded text-[10px] font-mono bg-emerald-700/80 text-emerald-100">
-                Tombol [{shortcutKey}]
+                [{shortcutKey}]
               </span>
             </button>
           </div>

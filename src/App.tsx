@@ -469,7 +469,7 @@ export default function App() {
       />
 
       {/* Main Content Area */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
+      <main className="max-w-7xl mx-auto px-3 sm:px-6 py-4 sm:py-6 space-y-4 sm:space-y-6 pb-6">
         {/* Title & Balai Warga context strip */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
@@ -482,7 +482,7 @@ export default function App() {
                 Sistem Turus Ikat 5 (|||| <s>||||</s>)
               </span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight mt-0.5">
+            <h1 className="text-xl sm:text-3xl font-extrabold tracking-tight mt-0.5">
               Pemilihan Calon Ketua {config.rtNumber} / {config.rwNumber}
             </h1>
           </div>
